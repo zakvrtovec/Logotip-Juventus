@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/x-icon" href="images/Juventus-logo-white.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juventus Official Online Store</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="logotipi.html"><img src="images/Juventus-logo.png"></a>
+        </div>
+        <div class="napis">JUVENTUS OFFICIAL ONLINE STORE</div>
+        <div class="buttons">
+            <div class="search"><a href=""></a></div>
+            <div class="cart"><a href=""></a></div>
+            <div class="user"><a href=""></a></div>
+        </div>
+    </div>
+    <div class="meni">
+        <ul>
+            <a href=""><li>PNG</li></a>
+            <a href=""><li>SVG</li></a>
+            <a href=""><li>BEZIER</li></a>
+        </ul>
+    </div>
+    <div class="background">
+    </div>
+    <div class="store">
+        <div class="heading">MATCH KITS</div>
+        <div class="dropdown-menu">
+            <div class="dropdown">
+                <button class="dropdown-button">GENDER</button>
+                <div class="dropdown-content">
+                    <label><input type="checkbox"> Man</label>
+                    <label><input type="checkbox"> Woman</label>
+                    <label><input type="checkbox"> Child</label>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropdown-button">SIZE</button>
+                <div class="dropdown-content">
+                    <label><input type="checkbox"> XXS</label>
+                    <label><input type="checkbox"> XS</label>
+                    <label><input type="checkbox"> S</label>
+                    <label><input type="checkbox"> M</label>
+                    <label><input type="checkbox"> L</label>
+                    <label><input type="checkbox"> XL</label>
+                    <label><input type="checkbox"> XXL</label>
+                    <label><input type="checkbox"> XXXL</label>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropdown-button">PRODUCT</button>
+                <div class="dropdown-content">
+                    <label><input type="checkbox"> <span class="badge new">New</span></label>
+                    <label><input type="checkbox"> <span class="badge promo">Promo</span></label>
+                    <label><input type="checkbox"> <span class="badge customizable">Customizable</span></label>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropdown-button">PRICE</button>
+                <div class="dropdown-content">
+                    <label><input type="checkbox"> Less than 50 €</label>
+                    <label><input type="checkbox"> 50 - 100 €</label>
+                    <label><input type="checkbox"> 100 - 150 €</label>
+                    <label><input type="checkbox"> More than 150 €</label>
+                </div>
+            </div>
+        </div>
+        <div class="shop">
+            <div class="item">asd</div>
+            <div class="item">sd</div>
+            <div class="item">sds</div>
+            <div class="name-price">sd</div>
+            <div class="name-price">sd</div>
+            <div class="name-price">sd</div>
+        </div>
+    </div>
+    <div class="leg"></div>
+
+
+
+    <script>
+        document.querySelectorAll('.dropdown-button').forEach(button => {
+            button.addEventListener('click', function() {
+                this.nextElementSibling.classList.toggle('show');
+            });
+        });
+        
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropdown-button')) {
+                document.querySelectorAll('.dropdown-content').forEach(content => {
+                    if (content.classList.contains('show')) {
+                        content.classList.remove('show');
+                    }
+                });
+            }
+        };
+    </script>
+</body>
+</html>
