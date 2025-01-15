@@ -72,3 +72,51 @@ window.onload = function() {
     // Draw the SVG icon (in this case, Juventus logo)
     SVGIcons["juventus-logo.svg"].draw(ctx);
 };
+
+document.querySelectorAll('.arrow-down1, .dropdown-button1').forEach(button => {
+    button.addEventListener('click', function() {
+    let div = document.getElementById('num1');
+
+    if (div) {
+      if (div.classList.contains('invis1')) {
+        div.classList.remove('invis1');
+        div.classList.add('dropdown-content1');
+      } else if (div.classList.contains('dropdown-content1')) {
+        div.classList.remove('dropdown-content1');
+        div.classList.add('invis1');
+      }
+    }
+  });
+});
+
+document.querySelectorAll('.arrow-down2, .dropdown-button2').forEach(button => {
+    button.addEventListener('click', function() {
+    let div = document.getElementById('num2');
+
+    if (div) {
+      if (div.classList.contains('invis2')) {
+        div.classList.remove('invis2');
+        div.classList.add('dropdown-content2');
+      } else if (div.classList.contains('dropdown-content2')) {
+        div.classList.remove('dropdown-content2');
+        div.classList.add('invis2');
+      }
+    }
+  });
+});
+
+document.querySelectorAll('.arrow-down3, .dropdown-button3').forEach(button => {
+    button.addEventListener('click', function() {
+    let div = document.getElementById('num3');
+
+    if (div) {
+      if (div.classList.contains('invis3')) {
+        div.classList.remove('invis3');
+        div.classList.add('dropdown-content3');
+      } else if (div.classList.contains('dropdown-content3')) {
+        div.classList.remove('dropdown-content3');
+        div.classList.add('invis3');
+      }
+    }
+  });
+});
